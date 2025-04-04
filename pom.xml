@@ -6,7 +6,7 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.4.4</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath/> 
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>demo</artifactId>
@@ -51,6 +51,21 @@
             <configuration>
                 <mainClass>com.example.weather.WeatherServer</mainClass>
             </configuration>
+        </plugin>
+	    <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>3.1.0</version>
+            <executions>
+                <execution>
+                    <goals>
+                        <goal>java</goal>
+                    </goals>
+                    <configuration>
+                        <mainClass>com.example.weather.SensorClient</mainClass> 
+                    </configuration>
+                </execution>
+            </executions>
         </plugin>
     </plugins>
 </build>
