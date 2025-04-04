@@ -8,7 +8,7 @@ public class SensorClient {
     private static final int PORT = 5000;
 
     public static void main(String[] args) {
-        try (Socket socket = new Socket(SERVER_IP, SERVER_PORT);
+        try (Socket socket = new Socket(HOST,PORT);
              PrintWriter writer = new PrintWriter(socket.getOutputStream(), true);
              BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
              Scanner scanner = new Scanner(System.in)) {

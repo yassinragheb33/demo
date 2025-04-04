@@ -7,7 +7,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.Scanner;
 
-public class WeatherHttpClient {
+public class WeatherClient {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
