@@ -3,8 +3,9 @@ import java.io.*;
 import java.net.Socket;
 import java.util.Scanner;
 
+
 public class SensorClient {
-    private static final String HOST = "localhost"; // han8ayaro ma3a el LAN
+    private static final String HOST = "192.168.1.10"; // han8ayaro ma3a el LAN
     private static final int PORT = 5000;
 
     public static void main(String[] args) {

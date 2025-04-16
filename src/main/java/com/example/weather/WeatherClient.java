@@ -17,7 +17,7 @@ public class WeatherClient {
 
         String encodedCity = URLEncoder.encode(city, StandardCharsets.UTF_8);
 
-        String requestUrl = "http://localhost:8080/weather/" + encodedCity; // han8ayar el IP fel LAN
+        String requestUrl = "http://192.168.1.10:8080/weather?city=" + encodedCity; // han8ayar el IP fel LAN
 
         try {
             HttpClient client = HttpClient.newHttpClient();
